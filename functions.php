@@ -43,8 +43,10 @@ function custom_post_type()
             'show_in_rest' => true,
             'show_admin_column' => true,
             'query_var' => true,
+            'rewrite' => array('slug' => 'bookcategory'),
 
-        )
+        ),
+       
     );
     register_taxonomy(
         'book_tag',
@@ -58,7 +60,7 @@ function custom_post_type()
             'show_in_rest' => true,
             'show_admin_column' => true,
             'query_var' => true,
-            'rewrite' => array('slug' => 'bookcatogery'),
+           
         )
     );
 }

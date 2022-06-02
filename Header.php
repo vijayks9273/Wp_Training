@@ -8,7 +8,6 @@
  *
  * @package sample
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -24,28 +23,27 @@
 <div id="page" class="site" >
 	<div class="background"style="background-color:rgb(255, 153, 51)">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'sample' ); ?></a>
-
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" style="text-decoration:none;color:darkorchid"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title"style="text-align: center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" style=" text-decoration:none;color:darkorchid;" ><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			else :
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"  style="text-decoration:none;color:darkorchid"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			endif;
 			$sample_description = get_bloginfo( 'description', 'display' );
 			if ( $sample_description || is_customize_preview() ) :
 				?>
-				<h3 class="site-description"style="color:darkorchid"><?php echo $sample_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h3>
+				<h3 class="site-description"style="color:darkorchid;text-align: center"><?php echo $sample_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h3>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation" >
 			
 			<?php
 			wp_nav_menu(
