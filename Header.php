@@ -33,7 +33,7 @@
 				<?php
 			else :
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"  style="text-decoration:none;color:darkorchid"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title"style="text-align: center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"  style="text-decoration:none;color:darkorchid"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			endif;
 			$sample_description = get_bloginfo( 'description', 'display' );
